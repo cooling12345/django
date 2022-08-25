@@ -1,0 +1,283 @@
+<html>
+    <head>
+        <title>HTML 연습</title>
+    </head>
+    <body>
+        <!-- head section : HTML 문서에 대한 정보 (메타데이터)
+        body section : 본문 내용 -->
+        <!-- HTML 에서는 두 개 이상의 공백 , 줄바꿈 > 하나의 공백 대체
+        <br> br 을 사용해야한다!!
+        1<br>2<br>3 -->
+        <h1>BLOCK TAGS</h1>
+        <div>block tag 들은 한 줄 전체 공간차지!!</div>
+
+        <hr>
+            <h2>✨H Tag</h2>
+        <hr>
+        <div>news headline 생각!! </div>
+        
+        <h1>안녕1</h1>
+        <h2>안녕2</h2>
+        <h3>안녕3</h3>
+        <h4>안녕4</h4>
+        <h5>안녕5</h5>
+        <h6>안녕6</h6>
+
+        <br><br>
+        <hr>
+            <h2>✨div Tag✨</h2>
+        <hr>
+        <div>엄청많이 써요! 레이아웃(틀) 지정!!</div>
+        <div class="green">여기는 빨간색</div>
+        <div class="skyblue">여기는 파란색</div>
+
+        <br><br>
+        <hr>
+            <h2>✨list Tag✨</h2>
+        <hr>
+        <div>
+            순서없는리스트(unordered list), 
+            순서있는리스트(ordered list) <br>
+            li 라는 하위태그를 가진다!!
+        </div>
+        <br>
+
+        <b>먹고싶은음식 TOP3</b>
+        <ol>
+            <li>김치찌개</li>
+            <li>흑돼지 김치찌개</li>
+            <li>울엄마 김치찌개</li>
+        </ol>
+
+        <br>
+        <b>김치찌개 종류</b>
+        <ul>
+            <li>돼지고기 김치찌개❤</li>
+            <li>꽁치 김치찌개</li>
+            <li>참치 김치찌개</li>
+        </ul>
+
+
+        <br><br>
+        <hr>
+            <h2>p Tag</h2>
+        <hr>
+        <div>
+            문단 나타냄, 
+            p 태그는 하위태그로 p 태그 아니면 인라인태그만 올 수 있다.
+        </div>
+        <p>문단1</p>
+        <p>문단2</p>
+
+
+        <br><br>
+        <hr>
+            <h2>✨✨table Tag✨✨</h2>
+        <hr>
+        <div>
+            table 하위태그로 tr(행) 을 갖는다. <br>
+            tr 의 하위태그로 th,td(열) 를 갖는다.
+        </div>
+
+        <table border="1">
+            <tr>
+                <th colspan="4">강사소개표</th>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>과목</th>
+                <th>특이사항</th>
+            </tr>
+            <tr>
+                <td>HAN</td>
+                <td>36</td>
+                <td>python, django</td>
+                <td rowspan="2">없음</td>
+            </tr>
+            <tr>
+                <td>YANG</td>
+                <td>45</td>
+                <td>java, jsp</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <th colspan="6">한달시간표</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>mon</th>
+                <th>tue</th>
+                <th>wed</th>
+                <th>thu</th>
+                <th>fri</th>
+            </tr>
+            <tr>
+                <td>1교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">python</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td></td>
+                <td rowspan="3">django</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3교시</td>
+                <td></td>
+                <td rowspan="2">network</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>INLINE TAGS</h1>
+        <div>inline tag 들은 딱 그 내용 만큼만 차지!!</div>
+        
+        <br><br>
+        <hr>
+            <h2>✨✨img Tag✨✨</h2>
+        <hr>
+        <div>
+            src 라는 필수속성을 가지고 있다. (출처)
+            ( 외부URL, 내부파일 ) <br>
+            width, height, title (설명)
+        </div>
+
+        <img width="200px" title="BJ kennen" src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2Fde%2F82%2Ff5%2Fde82f594621efe0a461d64da99f1716e--character-art-cartoons.jpg&type=sc960_832">
+        <img width="200px" title="pika" src="https://i2.ruliweb.com/ori/18/11/27/16754e9fced16415f.gif">
+
+        <br><br>
+        <hr>
+            <h2>✨✨button Tag✨✨</h2>
+        <hr>
+        <button onclick="hello()">클릭1</button>
+        <button>클릭2</button>
+        <button>클릭3</button>
+
+        <script>
+            function hello(){
+                alert("hello");
+            }
+        </script>
+
+
+        <br><br>
+        <hr>
+            <h2>✨✨a Tag✨✨</h2>
+        <hr>
+
+        <div>
+            링크를 담당하는 태그<br>
+            href 속성(링크) targer (창)
+            _self (현재창:default)
+        </div>
+        <a href="https://naver.com" target="_blank">네이버 바로가기</a>
+        <a href="https://naver.com"><button>네이버</button></a>
+
+        <br><br>
+        <hr>
+            <h2>✨✨textarea Tag✨✨</h2>
+        <hr>
+        <div>
+            긴글을 입력받을 때 사용! <br>
+            placleholders: 안내글
+            rows : 세로 cols : 가로
+            disabled : 비활성화
+        </div>
+        <textarea placeholder = "글을 입력해주세요!" rows="5" cols="60"></textarea>
+        <textarea rows="5" cols="60" disabled>hey fine!</textarea>
+
+
+        <br><br>
+        <hr>
+            <h2>✨✨select Tag✨✨</h2>
+        <hr>
+        <div>항목을 선택받을 때 사용하는 태그 option</div>
+        <select>
+            <option>제목</option>
+            <option>글쓴이</option>
+            <option>내용</option>
+        </select>
+
+        <br><br>
+        <hr>
+            <h2>✨✨span Tag✨✨</h2>
+        <hr>
+        <div>영역을 표시, 레이아웃(틀) 지정</div>
+        <span class="yellow">여기는 초록색</span>
+        <span class="aquamarine">여기는 노란색</span>
+
+        <br><br>
+        <hr>
+            <h2>✨✨input Tag✨✨</h2>
+        <hr>
+        <div>입력받는 태그, type 속성을 가짐</div>
+
+        <input type="text"><br>
+        <input type="password"><br>
+        <input type="file"><br>
+        <input type="radio"><br>
+        <input type="chechbox"><br>
+
+        <input type="color"><br>
+        <input type="time"><br>
+
+        <style>
+            h1 {
+                background-color:skyblue;
+            }
+            h2 {
+                color: aquamarine;
+            }
+            .red{
+                color: rebeccapurple;
+                font-size: 35px;
+            }
+            .blue{
+                color: azure;
+                font-weight: bold;
+            }
+            img:hover{
+                opacity: 0.5;
+            }
+        </style>
+
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+
+    </body>
+</html>
+
+
+
+
+
+
+    </body>
+</html>
